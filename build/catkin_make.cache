@@ -1,0 +1,2 @@
+openslam_gmapping-melodic-devel:slam_gmapping-melodic-devel/gmapping:slam_gmapping-melodic-devel/slam_gmapping
+-DCATKIN_DEVEL_PREFIX=/home/felipea2/boxer_melodic/devel -DCMAKE_INSTALL_PREFIX=/home/felipea2/boxer_melodic/install -G Unix Makefiles
