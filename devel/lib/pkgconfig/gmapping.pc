@@ -1,4 +1,4 @@
-prefix=/home/felipea2/boxer_melodic/devel
+prefix=/home/ingui2/boxer_melodic/devel
 
 Name: gmapping
 Description: Description of gmapping

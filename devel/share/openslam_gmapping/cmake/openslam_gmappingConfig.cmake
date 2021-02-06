@@ -67,14 +67,14 @@ set(openslam_gmapping_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(openslam_gmapping_SOURCE_PREFIX /home/felipea2/boxer_melodic/src/openslam_gmapping-melodic-devel)
-  set(openslam_gmapping_DEVEL_PREFIX /home/felipea2/boxer_melodic/devel)
+  set(openslam_gmapping_SOURCE_PREFIX /home/ingui2/boxer_melodic/src/openslam_gmapping-melodic-devel)
+  set(openslam_gmapping_DEVEL_PREFIX /home/ingui2/boxer_melodic/devel)
   set(openslam_gmapping_INSTALL_PREFIX "")
   set(openslam_gmapping_PREFIX ${openslam_gmapping_DEVEL_PREFIX})
 else()
   set(openslam_gmapping_SOURCE_PREFIX "")
   set(openslam_gmapping_DEVEL_PREFIX "")
-  set(openslam_gmapping_INSTALL_PREFIX /home/felipea2/boxer_melodic/install)
+  set(openslam_gmapping_INSTALL_PREFIX /home/ingui2/boxer_melodic/install)
   set(openslam_gmapping_PREFIX ${openslam_gmapping_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(openslam_gmapping_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/felipea2/boxer_melodic/src/openslam_gmapping-melodic-devel/include " STREQUAL " ")
+if(NOT "/home/ingui2/boxer_melodic/src/openslam_gmapping-melodic-devel/include " STREQUAL " ")
   set(openslam_gmapping_INCLUDE_DIRS "")
-  set(_include_dirs "/home/felipea2/boxer_melodic/src/openslam_gmapping-melodic-devel/include")
+  set(_include_dirs "/home/ingui2/boxer_melodic/src/openslam_gmapping-melodic-devel/include")
   if(NOT "https://github.com/ros-perception/openslam_gmapping/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/ros-perception/openslam_gmapping/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://openslam.org/gmapping " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/felipea2/boxer_melodic/src/openslam_gmapping-melodic-devel/include
         message(FATAL_ERROR "Project 'openslam_gmapping' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'openslam_gmapping' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/felipea2/boxer_melodic/src/openslam_gmapping-melodic-devel/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'openslam_gmapping' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/ingui2/boxer_melodic/src/openslam_gmapping-melodic-devel/${idir}'.  ${_report}")
     endif()
     _list_append_unique(openslam_gmapping_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/felipea2/boxer_melodic/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/ingui2/boxer_melodic/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

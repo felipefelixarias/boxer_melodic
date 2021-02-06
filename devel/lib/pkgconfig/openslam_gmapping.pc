@@ -1,8 +1,8 @@
-prefix=/home/felipea2/boxer_melodic/devel
+prefix=/home/ingui2/boxer_melodic/devel
 
 Name: openslam_gmapping
 Description: Description of openslam_gmapping
 Version: 0.2.1
-Cflags: -I/home/felipea2/boxer_melodic/src/openslam_gmapping-melodic-devel/include
+Cflags: -I/home/ingui2/boxer_melodic/src/openslam_gmapping-melodic-devel/include
 Libs: -L${prefix}/lib -lutils -lsensor_base -lsensor_odometry -lsensor_range -llog -lconfigfile -lscanmatcher -lgridfastslam
 Requires: 

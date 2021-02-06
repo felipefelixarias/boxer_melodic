@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/configfile_test.dir/configfile/configfile_test.cpp.o -o /home/felipea2/boxer_melodic/devel/lib/openslam_gmapping/configfile_test  -Wl,-rpath,/home/felipea2/boxer_melodic/devel/lib: /home/felipea2/boxer_melodic/devel/lib/libconfigfile.so 
